@@ -40,5 +40,29 @@ pip install -e .
 pip install -r requirements_torch.txt
 ```
 
+### Closed-loop Evaluation
+- Download the model checkpoint from [Huggingface](https://huggingface.co/ZhengYinan2001/Diffusion-Planner) repository. Download, two files under `checkpoints` directory. 
+```bash
+mkdir -p checkpoints
+wget -P ./checkpoints https://huggingface.co/ZhengYinan2001/Diffusion-Planner/resolve/main/args.json
+wget -P ./checkpoints https://huggingface.co/ZhengYinan2001/Diffusion-Planner/resolve/main/model.pth
+```
+- Run the simulation
+1. Set up configuration in sim_diffusion_planner_runner.sh.
+2. Run
+```bash 
+bash sim_diffusion_planner_runner.sh
+```
+If error: $'\r': command not found
+```
+sed -i 's/\r$//' sim_diffusion_planner_runner.sh
+```
+Then re-run the bash command.
+
+- Visualize the results
+1. Set up configuration in run_nuboard.ipynb.
+2. Launch Jupyter Notebook or JupyterLab to execute run_nuboard.ipynb.
+
+
 
 
