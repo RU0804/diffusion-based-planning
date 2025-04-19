@@ -9,7 +9,13 @@ Working idea
 
 Diffusion-based planning
 
-(Reference:)
+(Reference:
+@article{zheng2025diffusion,
+  title={Diffusion-Based Planning for Autonomous Driving with Flexible Guidance},
+  author={Zheng, Yinan and Liang, Ruiming and Zheng, Kexin and Zheng, Jinliang and Mao, Liyuan and Li, Jianxiong and Gu, Weihao and Ai, Rui and Li, Shengbo Eben and Zhan, Xianyuan and others},
+  journal={arXiv preprint arXiv:2501.15564},
+  year={2025}
+})
 
 ## Getting Started
 
