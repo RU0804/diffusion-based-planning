@@ -64,7 +64,11 @@ If error: $'\r': command not found
 sed -i 's/\r$//' sim_diffusion_planner_runner.sh
 ```
 Then re-run the bash command.
-
+If hitting a runtime error in scipy, specifically:
+```
+TypeError: 'iwrk': array([], dfitpack_int), 'u': array([], float),
+```
+Use scipy-1.9.3 or other stable versions that released earlier than 1.10.1.
 - Visualize the results
 1. Set up configuration in run_nuboard.ipynb.
 2. Launch Jupyter Notebook or JupyterLab to execute run_nuboard.ipynb.
