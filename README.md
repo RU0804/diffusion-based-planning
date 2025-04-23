@@ -69,6 +69,15 @@ If hitting a runtime error in scipy, specifically:
 TypeError: 'iwrk': array([], dfitpack_int), 'u': array([], float),
 ```
 Use scipy-1.9.3 or other stable versions that released earlier than 1.10.1.
+
+If hitting error: ImportError: cannot import name 'Figure' from 'bokeh.plotting'
+```
+pip install 'bokeh<3.0.0'
+```
+If hitting error: TypeError: Cannot convert numpy.ndarray to numpy.ndarray
+Install pandas < 2.2.0. Recommend installing pandas==1.5.0
+
+
 - Visualize the results
 1. Set up configuration in run_nuboard.ipynb.
 2. Launch Jupyter Notebook or JupyterLab to execute run_nuboard.ipynb.
