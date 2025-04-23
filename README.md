@@ -47,6 +47,8 @@ git clone https://github.com/ZhengYinan-AIR/Diffusion-Planner.git
 cd Diffusion-Planner
 pip install -e .
 pip install -r requirements_torch.txt
+# Exported a new completed env requirement ready to run the simulation
+pip install -r requirements_sim.txt
 ```
 
 ### Closed-loop Evaluation
